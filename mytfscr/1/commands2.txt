@@ -1,0 +1,244 @@
+C:\Users\pierluigi.sicuro>py --version
+Python 3.8.2
+
+C:\Users\pierluigi.sicuro>pip list
+Package    Version
+---------- -------
+appdirs    1.4.4
+distlib    0.3.1
+filelock   3.0.12
+pip        21.3.1
+setuptools 41.2.0
+six        1.15.0
+virtualenv 20.3.1
+WARNING: You are using pip version 21.3.1; however, version 22.2.2 is available.
+You should consider upgrading via the 'c:\python38\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\pierluigi.sicuro>c:\python38\python.exe -m pip install --upgrade pip
+...
+Successfully installed pip-22.2.2
+
+C:\Users\pierluigi.sicuro>py -m pip --version
+pip 22.2.2 from C:\Python38\lib\site-packages\pip (python 3.8)
+
+C:\Users\pierluigi.sicuro>pip --version
+pip 22.2.2 from c:\python38\lib\site-packages\pip (python 3.8)
+
+C:\Users\pierluigi.sicuro>pip -V
+pip 22.2.2 from c:\python38\lib\site-packages\pip (python 3.8)
+
+C:\Users\pierluigi.sicuro>pip install --upgrade pip
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+C:\Users\pierluigi.sicuro>virtualenv --version
+virtualenv 20.3.1 from c:\python38\lib\site-packages\virtualenv\__init__.py
+
+C:\Users\pierluigi.sicuro>cd C:\Users\pierluigi.sicuro\Desktop\Nuova cartella
+C:\Users\pierluigi.sicuro\Desktop\Nuova cartella>virtualenv myvenv
+created virtual environment CPython3.8.2.final.0-64 in 69436ms
+  creator CPython3Windows(dest=C:\Users\pierluigi.sicuro\Desktop\Nuova cartella\myvenv, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\pierluigi.sicuro\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==21.3.1, setuptools==60.3.1, wheel==0.37.1
+  activators BashActivator,BatchActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+
+C:\Users\pierluigi.sicuro\Desktop\Nuova cartella>myvenv\Scripts\activate
+(myvenv) C:\Users\pierluigi.sicuro\Desktop\Nuova cartella>deactivate
+C:\Users\pierluigi.sicuro\Desktop\Nuova cartella>
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Block comment 
+Maiusc Alt a
+Maiusc MaiuscFisso Alt a
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+C:\Users\pierluigi.sicuro\Desktop>cd C:\Users\pierluigi.sicuro\Desktop\mypy1
+
+C:\Users\pierluigi.sicuro\Desktop\mypy1>myvenv\Scripts\activate
+
+(myvenv) C:\Users\pierluigi.sicuro\Desktop\mypy1>pip list
+Package    Version
+---------- -------
+appdirs    1.4.4
+distlib    0.3.1
+filelock   3.0.12
+pip        22.2.2
+setuptools 41.2.0
+six        1.15.0
+virtualenv 20.3.1
+
+(myvenv) C:\Users\pierluigi.sicuro\Desktop\mypy1>pip install matplotlib
+...
+Successfully installed contourpy-1.0.5 cycler-0.11.0 fonttools-4.37.4 kiwisolver-1.4.4 matplotlib-3.6.0 numpy-1.23.3 packaging-21.3 pillow-9.2.0 pyparsing-3.0.9 python-dateutil-2.8.2
+
+(myvenv) C:\Users\pierluigi.sicuro\Desktop\mypy1>pip list
+Package         Version
+--------------- -------
+appdirs         1.4.4
+contourpy       1.0.5
+cycler          0.11.0
+distlib         0.3.1
+filelock        3.0.12
+fonttools       4.37.4
+kiwisolver      1.4.4
+matplotlib      3.6.0
+numpy           1.23.3
+packaging       21.3
+Pillow          9.2.0
+pip             22.2.2
+pyparsing       3.0.9
+python-dateutil 2.8.2
+setuptools      41.2.0
+six             1.15.0
+virtualenv      20.3.1
+
+(myvenv) C:\Users\pierluigi.sicuro\Desktop\mypy1>python myscr1.py
+4 to the power 3 is 64
+4 to the power 3 is 64
+4 to the power 3 is 90.51
+
+(myvenv) C:\Users\pierluigi.sicuro\Desktop\mypy1>python
+Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 23:03:10) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import matplotlib.pyplot as plt
+>>> import numpy as np
+>>> x0 = np.array([1.3, 0.7, 0.8, 1.9, 1.2])
+>>> plt.plot(x0)
+[<matplotlib.lines.Line2D object at 0x000002A359AF5E20>]
+>>> plt.show()
+>>> exit()
+
+(myvenv) C:\Users\pierluigi.sicuro\Desktop\mypy1>pip install tensorflow
+
+Installing collected packages: tensorboard-plugin-wit, pyasn1, libclang, keras, flatbuffers, zipp, wrapt, wheel, urllib3, typing-extensions, termcolor, tensorflow-io-gcs-filesystem, tensorflow-estimator, tensorboard-data-server, rsa, pyasn1-modules, protobuf, opt-einsum, oauthlib, MarkupSafe, keras-preprocessing, idna, h5py, grpcio, google-pasta, gast, charset-normalizer, certifi, cachetools, absl-py, werkzeug, requests, importlib-metadata, google-auth, astunparse, requests-oauthlib, markdown, google-auth-oauthlib, tensorboard, tensorflow
+Successfully installed MarkupSafe-2.1.1 absl-py-1.2.0 astunparse-1.6.3 cachetools-5.2.0 certifi-2022.9.24 charset-normalizer-2.1.1 flatbuffers-22.9.24 gast-0.4.0 google-auth-2.12.0 google-auth-oauthlib-0.4.6 google-pasta-0.2.0 grpcio-1.49.1 h5py-3.7.0 idna-3.4 importlib-metadata-4.12.0 keras-2.10.0 keras-preprocessing-1.1.2 libclang-14.0.6 markdown-3.4.1 oauthlib-3.2.1 opt-einsum-3.3.0 protobuf-3.19.6 pyasn1-0.4.8 pyasn1-modules-0.2.8 requests-2.28.1 requests-oauthlib-1.3.1 rsa-4.9 tensorboard-2.10.1 tensorboard-data-server-0.6.1 tensorboard-plugin-wit-1.8.1 tensorflow-2.10.0 tensorflow-estimator-2.10.0 tensorflow-io-gcs-filesystem-0.27.0 termcolor-2.0.1 typing-extensions-4.3.0 urllib3-1.26.12 werkzeug-2.2.2 wheel-0.37.1 wrapt-1.14.1 zipp-3.8.1
+
+(myvenv) C:\Users\pierluigi.sicuro\Desktop\mypy1>pip list
+Package                      Version
+---------------------------- ---------
+absl-py                      1.2.0
+appdirs                      1.4.4
+astunparse                   1.6.3
+cachetools                   5.2.0
+certifi                      2022.9.24
+charset-normalizer           2.1.1
+contourpy                    1.0.5
+cycler                       0.11.0
+distlib                      0.3.1
+filelock                     3.0.12
+flatbuffers                  22.9.24
+fonttools                    4.37.4
+gast                         0.4.0
+google-auth                  2.12.0
+google-auth-oauthlib         0.4.6
+google-pasta                 0.2.0
+grpcio                       1.49.1
+h5py                         3.7.0
+idna                         3.4
+importlib-metadata           4.12.0
+keras                        2.10.0
+Keras-Preprocessing          1.1.2
+kiwisolver                   1.4.4
+libclang                     14.0.6
+Markdown                     3.4.1
+MarkupSafe                   2.1.1
+matplotlib                   3.6.0
+numpy                        1.23.3
+oauthlib                     3.2.1
+opt-einsum                   3.3.0
+packaging                    21.3
+Pillow                       9.2.0
+pip                          22.2.2
+protobuf                     3.19.6
+pyasn1                       0.4.8
+pyasn1-modules               0.2.8
+pyparsing                    3.0.9
+python-dateutil              2.8.2
+requests                     2.28.1
+requests-oauthlib            1.3.1
+rsa                          4.9
+setuptools                   41.2.0
+six                          1.15.0
+tensorboard                  2.10.1
+tensorboard-data-server      0.6.1
+tensorboard-plugin-wit       1.8.1
+tensorflow                   2.10.0
+tensorflow-estimator         2.10.0
+tensorflow-io-gcs-filesystem 0.27.0
+termcolor                    2.0.1
+typing_extensions            4.3.0
+urllib3                      1.26.12
+virtualenv                   20.3.1
+Werkzeug                     2.2.2
+wheel                        0.37.1
+wrapt                        1.14.1
+zipp                         3.8.1
+
+(myvenv) C:\Users\pierluigi.sicuro\Desktop\mypy1>myvenv\Scripts\deactivate
+C:\Users\pierluigi.sicuro\Desktop\mypy1>pip list
+Package                      Version
+---------------------------- ---------
+absl-py                      1.2.0
+appdirs                      1.4.4
+astunparse                   1.6.3
+cachetools                   5.2.0
+certifi                      2022.9.24
+charset-normalizer           2.1.1
+contourpy                    1.0.5
+cycler                       0.11.0
+distlib                      0.3.1
+filelock                     3.0.12
+flatbuffers                  22.9.24
+fonttools                    4.37.4
+gast                         0.4.0
+google-auth                  2.12.0
+google-auth-oauthlib         0.4.6
+google-pasta                 0.2.0
+grpcio                       1.49.1
+h5py                         3.7.0
+idna                         3.4
+importlib-metadata           4.12.0
+keras                        2.10.0
+Keras-Preprocessing          1.1.2
+kiwisolver                   1.4.4
+libclang                     14.0.6
+Markdown                     3.4.1
+MarkupSafe                   2.1.1
+matplotlib                   3.6.0
+numpy                        1.23.3
+oauthlib                     3.2.1
+opt-einsum                   3.3.0
+packaging                    21.3
+Pillow                       9.2.0
+pip                          22.2.2
+protobuf                     3.19.6
+pyasn1                       0.4.8
+pyasn1-modules               0.2.8
+pyparsing                    3.0.9
+python-dateutil              2.8.2
+requests                     2.28.1
+requests-oauthlib            1.3.1
+rsa                          4.9
+setuptools                   41.2.0
+six                          1.15.0
+tensorboard                  2.10.1
+tensorboard-data-server      0.6.1
+tensorboard-plugin-wit       1.8.1
+tensorflow                   2.10.0
+tensorflow-estimator         2.10.0
+tensorflow-io-gcs-filesystem 0.27.0
+termcolor                    2.0.1
+typing_extensions            4.3.0
+urllib3                      1.26.12
+virtualenv                   20.3.1
+Werkzeug                     2.2.2
+wheel                        0.37.1
+wrapt                        1.14.1
+zipp                         3.8.1
+
+C:\Users\pierluigi.sicuro\Desktop\mypy1>myvenv\Scripts\activate
+
+(myvenv) C:\Users\pierluigi.sicuro\Desktop\mypy1>
+
